@@ -25,8 +25,7 @@ export class GifService {
 		return this.http.get(this.baseUrl + '/search', { params }).pipe(
 			map((response: any) => {
 				return response.results.map((gif: Gif) => this.gifAdapter(gif))
-			}
-			)
+			})
 		);
 	}
 
