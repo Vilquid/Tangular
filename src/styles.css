@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body
+{
+    background: linear-gradient(#ff1b6b, #45caff);
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+h1
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 5em;
+    font-family: 'Secular One', sans-serif;
+}
