@@ -1,0 +1,4 @@
+<div *ngFor="let gif of gifs">
+	<img [src]="gif.media.url" alt="{{ gif.description }}">
+	<p>{{ gif.description }}</p>
+</div>
