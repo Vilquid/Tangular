@@ -1,13 +1,11 @@
-<div *ngFor="let gif of gifs">
-	<div class="card bg-transparent" style="width: 18rem;">
-		<img [src]="gif.media.url" alt="{{ gif.description }}">
+<div class="container mx-auto justify-content-center row">
+	<a *ngFor="let gif of gifs" class="card bg-transparent text-black m-2" style="width: 18rem;" [href]="gif.urlTenor">
+		<img [src]="gif.media.url" alt="{{ gif.description }}" style="height: 17rem;">
 		<div class="card-body">
 			<p>{{ gif.description }}</p>
 		</div>
 		<div class="card-footer">
-			<div *ngFor="let tag of gif.tags">
-				<div class="badge text-bg-info">{{ tag }}</div>
-			</div>
+			<div *ngFor="let tag of gif.tags" class="badge text-bg-info me-1">{{ tag }}</div>
 		</div>
-	</div>
+	</a>
 </div>
