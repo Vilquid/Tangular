@@ -14,9 +14,13 @@ export class GifsComponent implements OnInit {
 	constructor(private gifService: GifService) { }
 
 	ngOnInit() {
-		this.gifService.getGifs('cat', 12).subscribe(gifs => {
+		this.search('cat', 12);
+	}
+
+	// Méthode qui permet de lancer la recherche et récupérer les gifs selon le mot clé et le nombre de résultats demandés
+	search(searchTerm: string, resultCount: number) {
+		this.gifService.getGifs(searchTerm, resultCount).subscribe(gifs => {
 			this.gifs = gifs;
-			console.table(this.gifs);
 		});
 	}
 }
