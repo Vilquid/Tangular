@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { GifsComponent } from './components/gifs/gifs.component';
 import { CatComponent } from './components/cat/cat.component';
 import { DogComponent } from './components/dog/dog.component';
+import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
@@ -18,6 +19,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 		GifsComponent,
 		CatComponent,
 		DogComponent,
+		SearchComponent,
 		AboutComponent,
 		PageNotFoundComponent
 	],

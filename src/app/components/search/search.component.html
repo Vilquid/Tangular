@@ -1,0 +1,4 @@
+<div class="d-flex" role="search">
+	<input class="form-control me-2" type="text" placeholder="Rechercher" (keydown.enter)="startSearch()" (keydown.escape)="resetInput()" [value]="searchTerm">
+	<button class="btn btn-outline-success" type="button" (click)="startSearch()">🔍</button>
+</div>
