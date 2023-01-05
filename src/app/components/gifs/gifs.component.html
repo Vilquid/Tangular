@@ -2,7 +2,7 @@
 	<a *ngFor="let gif of gifs" class="gifCard card bg-transparent text-white fw-bold m-2" style="width: 18rem;" [href]="gif.urlTenor" target="_blank">
 		<img [src]="gif.media.url" class="gifImg" alt="{{ gif.description }}" style="height: 17rem;">
 		<div class="card-body">
-			<p>{{ gif.description }}</p>
+			<p class="gifDescription">{{ gif.description }}</p>
 		</div>
 		<div class="card-footer gifFooter" >
 			<div *ngFor="let tag of gif.tags" class="badge text-bg-info me-1">{{ tag }}</div>

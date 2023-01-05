@@ -38,6 +38,9 @@ h1
 .gifImg{
     border-radius: 15px;
 }
+.gifDescription{
+    color: #353535;
+}
 
 *::-webkit-scrollbar
 {
