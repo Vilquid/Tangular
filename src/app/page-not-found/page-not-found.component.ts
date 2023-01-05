@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-page-not-found',
   template: `
     <p>
-      about works!
+      page-not-found works!
     </p>
   `,
   styles: [
   ]
 })
-export class AboutComponent {
+export class PageNotFoundComponent {
 
 }
