@@ -39,11 +39,13 @@ h1
     border-radius: 15px;
 }
 
-*::-webkit-scrollbar {
+*::-webkit-scrollbar
+{
     display: none;
 }
 
-* {
+*
+{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
