@@ -1,54 +1,45 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-body
-{
-    background: #ffffff;
+h1 {
+	color: #353535;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	font-size: 5em;
+	font-family: 'Secular One', sans-serif;
 }
 
-a
-{
-    color: white;
-    text-decoration: none;
+a {
+	color: white;
+	text-decoration: none;
 }
 
-h1
-{
-    color: #353535;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-size: 5em;
-    font-family: 'Secular One', sans-serif;
+.gifCard {
+	padding: 0;
+	border-radius: 15px;
+	box-shadow: 2px 2px 10px 1px rgba(53, 53, 53, 0.2);
+	border: none;
 }
 
-.gifCard
-{
-    padding: 0;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px 1px rgba(53, 53, 53, 0.2);
-    border: none;
+.gifDescription {
+	color: #353535;
 }
 
-.gifFooter{
-    border-radius: 0 0 15px 15px!important;
+.gifImg {
+	border-radius: 15px;
 }
 
-.gifImg{
-    border-radius: 15px;
-}
-.gifDescription{
-    color: #353535;
+.gifFooter {
+	border-radius: 0 0 15px 15px !important;
 }
 
-*::-webkit-scrollbar
-{
-    display: none;
+*::-webkit-scrollbar {
+	display: none;
 }
 
-*
-{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }

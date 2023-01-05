@@ -4,22 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { GifsComponent } from './components/gifs/gifs.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CatComponent } from './cat/cat.component';
-import { DogComponent } from './dog/dog.component';
-import { AboutComponent } from './about/about.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CatComponent } from './components/cat/cat.component';
+import { DogComponent } from './components/dog/dog.component';
+import { AboutComponent } from './components/about/about.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
+		NavbarComponent,
 		GifsComponent,
-  		NavbarComponent,
 		CatComponent,
 		DogComponent,
 		AboutComponent,
-  		PageNotFoundComponent
+		PageNotFoundComponent
 	],
 	imports: [
 		BrowserModule,
