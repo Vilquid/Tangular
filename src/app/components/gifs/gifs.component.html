@@ -1,5 +1,5 @@
 <div class="container mx-auto justify-content-center row">
-	<a *ngFor="let gif of gifs" class="card bg-transparent text-black m-2" style="width: 18rem;" [href]="gif.urlTenor" target="_blank">
+	<a *ngFor="let gif of gifs" class="card bg-transparent text-white fw-bold m-2" style="width: 18rem;" [href]="gif.urlTenor" target="_blank">
 		<img [src]="gif.media.url" alt="{{ gif.description }}" style="height: 17rem;">
 		<div class="card-body">
 			<p>{{ gif.description }}</p>

@@ -3,12 +3,12 @@
 
 body
 {
-    background: linear-gradient(#ff1b6b, #45caff);
+    background: #993399;
 }
 
 a
 {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -22,3 +22,4 @@ h1
     font-size: 5em;
     font-family: 'Secular One', sans-serif;
 }
+
