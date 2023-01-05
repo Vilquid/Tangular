@@ -38,3 +38,12 @@ h1
 .gifImg{
     border-radius: 15px;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
