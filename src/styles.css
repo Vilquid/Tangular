@@ -3,7 +3,7 @@
 
 body
 {
-    background: #993399;
+    background: #ffffff;
 }
 
 a
@@ -14,7 +14,7 @@ a
 
 h1
 {
-    color: white;
+    color: #353535;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,3 +23,18 @@ h1
     font-family: 'Secular One', sans-serif;
 }
 
+.gifCard
+{
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px rgba(53, 53, 53, 0.2);
+    border: none;
+}
+
+.gifFooter{
+    border-radius: 0 0 15px 15px!important;
+}
+
+.gifImg{
+    border-radius: 15px;
+}
