@@ -14,7 +14,7 @@ export class GifsComponent implements OnInit {
 	constructor(private gifService: GifService) { }
 
 	ngOnInit() {
-		this.gifService.getGifs('cat', 10).subscribe(gifs => {
+		this.gifService.getGifs('cat', 12).subscribe(gifs => {
 			this.gifs = gifs;
 			console.table(this.gifs);
 		});
