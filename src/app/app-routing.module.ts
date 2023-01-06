@@ -7,13 +7,12 @@ import { PageNotFoundComponent } from "./components/page-not-found/page-not-foun
 import { HomeComponent } from "./components/home/home.component";
 
 const routes: Routes = [
+	{ path: '', pathMatch: 'full', redirectTo: 'home' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'cat', component: CatComponent },
 	{ path: 'dog', component: DogComponent },
 	{ path: 'about', component: AboutComponent },
-	{ path: '**', component: PageNotFoundComponent },
-	{ path: '', pathMatch: 'full', redirectTo: 'home' }
-
+	{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
