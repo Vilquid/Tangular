@@ -2,18 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;600;700&display=swap');
 
+
+/*Générale*/
 body{
 	background-color: #0D1117;
-}
-
-h1 {
-	font-weight: bold;
 }
 
 p {
 	color: #fff;
 	font-family: 'Sora', sans-serif;
-
 }
 
 h1 {
@@ -24,6 +21,7 @@ h1 {
 	margin: auto;
 	font-size: 5em;
 	font-family: 'Sora', sans-serif;
+	font-weight: bold;
 }
 
 a {
@@ -35,9 +33,38 @@ a:hover {
 	color:#7371FF!important;
 }
 
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+/*NavBar | SearchBar*/
 .titreNavBar{
 	font-weight: bold;
 }
+
+.navbar{
+	display: flex;
+	font-family: 'Sora', sans-serif;
+	background-color: #0D1117!important
+}
+
+.navbarDiv{
+	width: 95%;
+	padding-bottom: 10px;
+	border-bottom: solid 3px #21262D
+}
+
+.btn:hover{
+	background-color: #22F1BF;
+}
+
+/*Gif Card*/
 
 .gifCard {
 	padding: 0;
@@ -66,17 +93,33 @@ a:hover {
 	border: 0px;
 	color: #21262D!important;
 	font-family: 'Sora', sans-serif;
+
 }
 
-.btn:hover{
-	background-color: #22F1BF;
+/*Page about*/
+.aboutCard{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-*::-webkit-scrollbar {
-	display: none;
+.aboutCard svg{
+	margin-bottom: 20px;
 }
 
-* {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+.aboutCard h2, .container h2{
+	font-family: 'Sora', sans-serif;
+	color: #ffffff;
+	text-align: center;
 }
+
+.aboutCard h2:hover{
+	color: #7371FF;
+}
+
+.about{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
