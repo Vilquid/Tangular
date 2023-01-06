@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from "./app.component";
 import { CatComponent } from "./components/cat/cat.component";
 import { DogComponent } from "./components/dog/dog.component";
 import { AboutComponent } from "./components/about/about.component";
@@ -8,7 +7,6 @@ import { PageNotFoundComponent } from "./components/page-not-found/page-not-foun
 import {HomeComponent} from "./components/home/home.component";
 
 const routes: Routes = [
-	//{ path: 'home', component: AppComponent },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'cat', component: CatComponent },
 	{ path: 'dog', component: DogComponent },
