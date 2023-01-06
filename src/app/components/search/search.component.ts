@@ -9,12 +9,14 @@ export class SearchComponent {
 
 	@Output() onSearch = new EventEmitter<string>();
 	searchTerm: string = "";
+	lastSearch: string = "";
 
 	// Méthode appelée lors de l'appui sur la touche Entrée ou clic sur le bouton de recherche
 	startSearch() {
 		if (this.searchTerm.length > 0) {
-			console.log(this.searchTerm)
-			this.onSearch.emit(this.searchTerm)
+			console.log("Recherche de : " + this.searchTerm);
+			this.onSearch.emit(this.searchTerm);
+			this.lastSearch = this.searchTerm;
 			this.searchTerm = "";
 		}
 	}

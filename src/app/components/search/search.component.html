@@ -2,3 +2,4 @@
 	<input class="form-control me-2" style="color: #ffffff;border: none;background-color: #21262D" type="text" placeholder="Rechercher" (keydown.enter)="startSearch()" (keydown.escape)="resetInput()" [(ngModel)]="searchTerm">
 	<button class="btn btn-outline-success" style="border-color: #22F1BF" type="button" (click)="startSearch()">🔍</button>
 </div>
+<p class="fs-5 mx-4 mb-5" *ngIf="lastSearch">Recherche de : {{ lastSearch }}</p>

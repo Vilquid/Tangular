@@ -14,6 +14,7 @@ export class GifsComponent implements OnInit {
 
 	constructor(private gifService: GifService, private router: Router) { }
 
+	// Méthode qui permet de récupérer les gifs selon l'url de la page à l'initialisation du composant
 	ngOnInit() {
 		if (this.router.url == '/cat') {
 			this.search('cat', 12);
