@@ -31,6 +31,14 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color:#7371FF!important;
+}
+
+.titreNavBar{
+	font-weight: bold;
+}
+
 .gifCard {
 	padding: 0;
 	border-radius: 15px;
