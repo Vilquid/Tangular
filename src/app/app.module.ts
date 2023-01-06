@@ -11,6 +11,7 @@ import { DogComponent } from './components/dog/dog.component';
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +22,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 		DogComponent,
 		SearchComponent,
 		AboutComponent,
-		PageNotFoundComponent
+		PageNotFoundComponent,
+  HomeComponent
 	],
 	imports: [
 		BrowserModule,

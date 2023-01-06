@@ -4,10 +4,12 @@ import { Component } from '@angular/core';
 	selector: 'app-root',
 	template: `
 		<app-navbar></app-navbar>
+		
 		<div class="m-5">
 			<h1>{{title}}</h1>
 		</div>
-		<app-gifs></app-gifs>
+		<router-outlet></router-outlet>
+		
 	`,
 	styles: []
 })
