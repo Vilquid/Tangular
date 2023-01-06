@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GifService } from '../../services/gif.service';
 import { Gif } from '../../models/gif.model';
-import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,19 +15,15 @@ export class GifsComponent implements OnInit {
 	constructor(private gifService: GifService, private router: Router) { }
 
 	ngOnInit() {
-		//this.search('cat', 12);
-
-		if(this.router.url == '/cat') {
+		if (this.router.url == '/cat') {
 			this.search('cat', 12);
 		}
-		else if(this.router.url == '/dog'){
+		else if (this.router.url == '/dog') {
 			this.search('dog', 12);
 		}
-		else{
+		else {
 			this.search('nature', 12);
 		}
-
-
 	}
 
 	// Méthode qui permet de lancer la recherche et récupérer les gifs selon le mot clé et le nombre de résultats demandés

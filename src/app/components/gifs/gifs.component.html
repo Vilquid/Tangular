@@ -1,11 +1,14 @@
-<div class="container mx-auto justify-content-center row">
-	<a *ngFor="let gif of gifs" class="gifCard card fw-bold mx-3 mb-5" style="width: 18rem;" [href]="gif.urlTenor" target="_blank">
-		<img [src]="gif.media.url" class="gifImg" alt="{{ gif.description }}" style="height: 17rem;">
-		<div class="card-body">
-			<p class="gifDescription">{{ gif.description }}</p>
-		</div>
-		<div class="card-footer gifFooter">
-			<div *ngFor="let tag of gif.tags" class="badge text-bg-info me-1">{{ tag }}</div>
-		</div>
-	</a>
+<div class="container">
+	<app-search (onSearch)="search($event, 12)"></app-search>
+	<div class="mx-auto justify-content-center row">
+		<a *ngFor="let gif of gifs" class="gifCard card fw-bold mx-3 mb-5" style="width: 18rem;" [href]="gif.urlTenor" target="_blank">
+			<img [src]="gif.media.url" class="gifImg" alt="{{ gif.description }}" style="height: 17rem;">
+			<div class="card-body">
+				<p class="gifDescription">{{ gif.description }}</p>
+			</div>
+			<div class="card-footer gifFooter">
+				<div *ngFor="let tag of gif.tags" class="badge text-bg-info me-1">{{ tag }}</div>
+			</div>
+		</a>
+	</div>
 </div>
