@@ -64,6 +64,11 @@ a:hover {
 	background-color: #22F1BF;
 }
 
+.navbar-toggler{
+	background-color: #7371FF;
+	border-color: #7371FF;
+}
+
 /*Gif Card*/
 
 .gifCard {
@@ -111,6 +116,7 @@ a:hover {
 	font-family: 'Sora', sans-serif;
 	color: #ffffff;
 	text-align: center;
+	transition: 300ms ease;
 }
 
 .aboutCard h2:hover{
