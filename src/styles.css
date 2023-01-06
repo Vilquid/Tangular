@@ -60,6 +60,10 @@ a {
 	font-family: 'Sora', sans-serif;
 }
 
+.btn:hover{
+	background-color: #22F1BF;
+}
+
 *::-webkit-scrollbar {
 	display: none;
 }
